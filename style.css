@@ -1,3 +1,9 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
 * {
     box-sizing: border-box;
 }
@@ -8,3 +14,13 @@
     list-style: none;
     justify-content: space-around;
 }
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .btn-blue {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
