@@ -1,8 +1,10 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+
 * {
     box-sizing: border-box;
+}
+
+.nav-bar {
+    background-color: FFFFFF;
 }
 
 .nav-links {
@@ -12,3 +14,23 @@
     justify-content: space-around;
 }
 
+.heading {
+    display: grid;
+    
+
+}
+
+.site-section {
+    font-color: #303030;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+}
+
+.sub-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
