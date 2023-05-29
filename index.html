@@ -8,41 +8,37 @@
     <title>SaaS App</title>
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
 
 <body>
 
   <div class="page">
-      <div class="nav-bar">
-        <img src="images/logo.png" alt="logo" class="logo">
+      <header class="nav-bar">
+        <a href="#"> <img src="images/Logo-P.png" alt="logo" class="nav-logo"></a>
         <ul class="nav-links">
-          <li class="site-section">
-            <a href="#" class="section-link">PrimeCRM</a>
-            </li>
-          <li class="site-section">
-            <a href="#" class="section-link">Solution</a>
+          <li class="site-section"><a href="#" class="nav-logo">PrimeCRM</a>
           </li>
-          <li class="site-section">
-            <a href="#" class="section-link">Industries</a>
+          <li class="site-section"><a href="#" class="site-section">Solution</a>
           </li>
-          <li class="site-section">
-            <a href="#" class="section-link">Products</a>
+          <li class="site-section"><a href="#" class="site-section">Industries</a>
           </li>
-          <li class="site-section">
-            <a href="#" class="section-link">Resources</a>
+          <li class="site-section"><a href="#" class="site-section">Products</a>
           </li>
-          <li class="site-section">
-            <a href="#" class="section-link">Pricing</a>
+          <li class="site-section"><a href="#" class="site-section">Resources</a>
           </li>
-          <li class="site-section">
-            <a href="#" class="section-link">Login</a>
+          <li class="site-section"><a href="#" class="site-section">Pricing</a>
+          </li>
+          <li class="site-section"><a href="#" class="site-section login">Login</a>
           </li>
         </ul>
-      </div>
+      </header>
 
       <div class="heading">
         <div class="banner">
-            <img src="images/header background.png" alt="header" class="header">
+            <!-- <img src="images/header background.png" alt="header" class="header"> -->
               <div class="content">
                   <p class="banner-header">The CRM Platform Your Whole Business Will Love</p>
                   <p>Provide excellent customer service.<br> 
@@ -52,19 +48,19 @@
               </div>
         </div>
 
-        <div class="5star">
-            <img src="images/five star.png" alt="5star" class="5star">
-            <img src="images/5 star background pattern.png" alt="5star" class="5star">
-            <img src="images/5 star rating.png" alt="5star" class="5star">
+        <div class="five-star">
+            <img src="images/five star.png" alt="five-star" class="five-star">
+            <img src="images/5 star background pattern.png" alt="five-star" class="five-star">
+            <img src="images/5 star rating.png" alt="five-star" class="five-star">
         </div>
 
         <div class="header-image">
-          <img src="images/header image 1.png" alt="bar graph" class="header image">
-          <img src="images/header image 2.png" alt="business strategy bar graph" class="header image">
-          <img src="images/header image 3.png" alt="sine graph" class="header image">
-          <img src="images/header image 4.png" alt="business amount earned this month" class="header image">
-          <img src="images/header image 5.png" alt="global statistics donut graph" class="header image">
-          <img src="images/header image pattern.png" alt="bdesign pattern" class="header image">
+          <img src="images/header image 1.png" alt="bar graph" class="header image-1">
+          <img src="images/header image 2.png" alt="business strategy bar graph" class="header image-2">
+          <img src="images/header image 3.png" alt="sine graph" class="header image-3">
+          <img src="images/header image 4.png" alt="business amount earned this month" class="header image-4">
+          <img src="images/header image 5.png" alt="global statistics donut graph" class="header image-5">
+          <img src="images/header image pattern.png" alt="bdesign pattern" class="header image-pattern">
         </div>      
       </div>
 
@@ -76,20 +72,20 @@
 
         <div class="features sub-content">
           <div class="features sub-content item-1">
-            <img src="images/features sub-content icon 1.png" alt="feature 1" class="features sub-content item 1">
+            <img src="images/features sub-content icon 1.png" alt="feature 1" class="features icon-1">
             <div class="features sub-content item-1 title">Powerful Settings</div>
             <div class="features sub-content item-1 content">Provide excellent customer service. <br>
               Answer more tickets.</div>
           </div>
 
           <div class="features sub-content item-2">
-            <img src="images/features sub-content icon 2.png" alt="feature 2" class="features sub-content item 2">
+            <img src="images/features sub-content icon 2.png" alt="feature 2" class="features icon-2">
             <div class="features sub-content item-2 title">User Friendly</div>
             <div class="features sub-content item-2 content">Use Timeline to plan projects right how the pieces fit together.</div>
           </div>
 
           <div class="features sub-content item-3">
-            <img src="images/features sub-content icon 3.png" alt="feature 3" class="features sub-content item 3">
+            <img src="images/features sub-content icon 3.png" alt="feature 3" class="features icon-3">
             <div class="features sub-content item-3 title">Integrated Platform</div>
             <div class="features sub-content item-3 content">Vivamus massa eleifend etiam neque
             odio feugiat dolor est.</div>
@@ -434,7 +430,7 @@
         </div>
       </div>
 
-      <div class="footer">
+      <footer class="footer">
         <div class="footer-bar">
           <img src="images/logo.png" alt="logo" class="logo">
           <ul class="footer-links">
@@ -442,16 +438,19 @@
               <a href="#" class="footer-link">PrimeCRM</a>
             </li>
             <li class="footer-section">
-              <a href="#" class="footer-link">IG</a>
+              <a aria-label="instagram" href="#" class="footer-link"></a>
             </li>
             <li class="footer-section">
-              <a href="#" class="footer-link">FB</a>
+              <a aria-label="facebook" href="#" class="footer-link"></a>
             </li>
             <li class="footer-section">
-              <a href="#" class="footer-link">YT</a>
+              <a aria-label="twitter" href="#" class="footer-link"></a>
             </li>
             <li class="footer-section">
-              <a href="#" class="footer-link">Twitter</a>
+              <a aria-label="linkedin" href="#" class="footer-link"></a>
+            </li>
+            <li class="footer-section">
+              <a aria-label="youtube" href="#" class="footer-link"></a>
             </li>
         </div>
 
@@ -481,8 +480,7 @@
           <div>Service</div>
             <ul>
               <li class="footer-section">
-                <a href="#" class="footer-link">Sale</a>
-              </li>
+                <a href="#" class="footer-link">Sale</a></li>
               <li class="footer-section">
                 <a href="#" class="footer-link">Marketing</a>
               </li>
@@ -519,7 +517,7 @@
               </div>
 
           </div>
-        </div>
+        </footer>
       </div>
 
 
