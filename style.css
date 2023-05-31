@@ -1,7 +1,10 @@
+/* Global styles */
+
 :root {
     --clr-primary-01: #49DEFF;
     --clr-primary-02: #4FFFDF;
     --clr-primary-03: #303030;
+    --clr-primary-04: #ffffff;
     --clr-secondary-01: #4E4E4E;
     --clr-secondary-02: #DEDEDE;
     --clr-secondary-03: #F4F4F4;
@@ -17,6 +20,15 @@
     --grid: 1fr;
 }
 
+.fw-semibold-500 {
+    font-weight: var(--fw-semibold-500);
+}
+.fw-semibold-600 {
+    font-weight: var(--fw-semibold-600);
+}
+.fw-semibold-700 {
+    font-weight: var(--fw-semibold-700);
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -25,137 +37,114 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul,
+ol, li {
   list-style: none;
+  text-decoration: none;
+}
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
 }
 
-.page {
-    margin: 0;
+/* main starts here */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    max-width: 1400px;
+    padding: 1rem;
+    border: rgb(40, 28, 109) solid 1px;
+    gap: 10px;
+
+    
+}
+
+
+.nav-bar {
+    
+    padding: 1rem;
+    border: red solid 1px;
+    flex-basis: auto;
 }
 
 .nav-logo {
     color: var(--clr-primary-03);
     font-weight: var(--fw-bold-700);
     align-content: left;
-    
+    font-size: 1.5rem;
 }
 
-.nav-bar {
-    /* display: flex;
-    flex-direction: row;
+.nav-list {
+    display: flex;
+    flex-direction: start;
     justify-content: space-around;
-    align-self: start;
-    list-style: none;
-    background-color: #F9F9F9;
-    max-width: auto; */
-    /* Auto layout */
-
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 403px;
-
-position: absolute;
-width: 1400px;
-height: 56px;
-left: 259.86px;
-top: 51px;
-
-/* background */
-position: absolute;
-width: 1440px;
-height: 1028px;
-left: 760px;
-top: 0px;
-
-background: #45A6FF;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
-.site-section {    
-    justify-content: right;
-    width: 144px;
-    margin: 5px;
-    color: var(--clr-primary-03);
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: var(--fw-medium-500);
-    text-transform: capitalize;
-    align-content: space-around;
-}
 .nav-links {
     display: flex;
     flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    color: var(--clr-primary-03);
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  
+  .nav-list li {
+    margin-right: 10px; /* Adjust the spacing between list items as needed */
+  }
+  
+  .nav-list li:last-child {
+    margin-right: 0; /* Remove the margin from the last list item */
+  }
+  
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 38px;
+    gap: 10px;
+
+    width: 127px;
+    height: 56px;
+    color: var(--clr-primary-04);
+    background: var(--clr-primary-03);
+    border-radius: 5px;
+}
+
+.testimonials {
+    background-color: var(--clr-primary-03);
+    color: var(--clr-primary-04);
+}
+
+
+.footer {
+    background-color: var(--clr-primary-03);
+    color: var(--clr-primary-04);
+}
+
+.footer-section > a {
+    color: var(--clr-primary-04);
+    text-decoration: none;
     list-style: none;
+}
+
+.footer-section > a:hover {
+    color: var(--clr-primary-01);
+}
+
+.sub-title-dark {
     
-}
-
-.features {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2;
-}
-
-.sub-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.sub-content .item-1 .item-2 .item-3 {
-    grid-column: 1;
-    grid-row: 2;
-
-}
-
-.features .icon-1, .icon-2, .icon-3 {
-    grid-area: span 2;
-}
-
-.sub-content .item-1 .item-3 {
-    background-color: #F4F4F4;
-}
-
-.banner-header {
-    max-width: 583px;
-    min-height: 240px;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 133.2%;
-
-    text-transform: capitalize;
-    color: #303030;
-    border: 1px solid #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-/* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.five-star {
-    /* 5 Star */
-
-
-position: absolute;
-width: 1411.5px;
-height: 259px;
-left: 260px;
-top: 936px;
-
-}
-
-.header .image-1 {
-    /* 1 */
-
-
-position: absolute;
-width: 367.09px;
-height: 198.06px;
-left: 875px;
-top: 434.81px;
-
-transform: rotate(-21.46deg);
 }
