@@ -146,5 +146,28 @@ svg {
 }
 
 .sub-title-dark {
+   /*  font-family: var(--ff-body); 
+    font-weight: var(--fw-semibold-500);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--clr-primary-03); */ 
+}
+
+.heading {
+    display: grid;
+    grid-template-areas: 'banner header-image'
+    'five-star header-image';
+}
+
+.banner {
+    grid-area: banner;
+    color: var(--clr-primary-03);
     
+}
+
+.five-star {
+    grid-area: five-star;
+
+.header-image {
+    grid-area: header-image;
 }
