@@ -167,6 +167,7 @@ svg {
 
 .five-star {
     grid-area: five-star;
+}
 
 .header-image {
     grid-area: header-image;
