@@ -18,6 +18,7 @@
     --fw-medium-500: 500;
     --fw-bold-700: 700;
     --grid: 1fr;
+    padding: 50px;
 }
 
 .fw-semibold-500 {
@@ -295,8 +296,7 @@ div.header-image-5 {
 .features-sub-content {
     display: grid;
     place-items: center;
-    grid-row: 2/3;
-    grid-column: 1/2;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: left;
 }
 
@@ -315,6 +315,49 @@ div.header-image-5 {
     grid-area: span 2;
 }    
 
+.items {
+    text-decoration: #49DEFF;
+}
+
+
+.core-features {
+    display: grid;
+    margin : 20 px;
+    grid-template-areas: "core-features-image-1 core-features-image-1 core-features-image-1"
+    "core-features-image-2 core-features-image-2 core-features-image-3"
+    "core-features-image-4 core-features-image-4 core-features-image-4"
+}
+
+.core-features-image-1 {
+    grid-area: core-features-image-1;
+}
+
+.core-features-image-2 {
+    grid-area: core-features-image-2;
+}
+
+.core-features-image-3 {
+    grid-area: core-features-image-3;
+}
+
+.core-features-image-4 {
+    grid-area: core-features-image-4;
+}
+
+.core-features .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+
+
+
+
+
+
+
+
 
 /* fonts and text styles */
 .section-title {
@@ -330,3 +373,10 @@ div.header-image-5 {
     font:'open sans';
     font-weight: var(--fw-regular-400);
 }
+
+.why-choose-us > .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
