@@ -51,25 +51,22 @@ svg {
   display: block;
 }
 
-/* main starts here, header section */
+/* header section */
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+
     max-width: 1400px;
     padding: 1rem;
     border: rgb(40, 28, 109) solid 1px;
     gap: 10px;
-
-    
 }
 
+/* Nav-bar section */
 
 .nav-bar {
-    
     padding: 1rem;
     /* border: red solid 1px; */
     flex-basis: auto;
@@ -124,13 +121,13 @@ svg {
     background: var(--clr-primary-03);
     border-radius: 5px;
 }
-
+/* testimonials section */
 .testimonials {
     background-color: var(--clr-primary-03);
     color: var(--clr-primary-04);
 }
 
-
+/* footer section */
 .footer {
     background-color: var(--clr-primary-03);
     color: var(--clr-primary-04);
@@ -154,6 +151,7 @@ svg {
     color: var(--clr-primary-03); */ 
 }
 
+/* main heading section */
 .heading {
     display: grid;
     border: solid 1px red;
@@ -320,6 +318,7 @@ div.header-image-5 {
 }
 
 
+/* core features section */
 .core-features {
     display: grid;
     margin : 20 px;
@@ -355,13 +354,10 @@ div.header-image-5 {
 
 
 
-
-
-
-
 /* fonts and text styles */
 .section-title {
     font-weight: var(--fw-semibold-600);
+    padding: 0%;
 }
 
 .sub-title {
@@ -374,9 +370,96 @@ div.header-image-5 {
     font-weight: var(--fw-regular-400);
 }
 
-.why-choose-us > .content {
+/* why choose us section */
+.why-choose-us {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px salmon;
+}
+.why-us-content {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding-left: 70px;
+    justify-content: center;
+    
 }
 
+.why-us-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 39px;
+    gap: 10px;
+    color: var(--clr-primary-04);
+    width: 183px;
+    height: 60px;
+
+    background: #303030;
+    border-radius: 5px;
+}
+
+.why-us-image {
+    padding-right: 70px;
+}
+
+/* TODO - rethink the client logos section */
+.client-logos {
+    display: flex;
+    flex-direction: column;
+    padding: 20 px;
+    justify-content: center;
+    align-items: center;
+    border-radius: solid 1px #C5C5C5;
+}
+
+.line-1 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    max-width: 1300px;
+    max-height: 40px;
+    margin: 10px;
+}
+.line-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1300px;
+    max-height: 40px;
+    margin: 10px;
+    
+}
+.line-3 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1300px;
+    max-height: 40px;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* Newsletters section */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid brown;
+    
+}
+
+.newsletter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    column-gap: 10px;
+    /* color: var(--clr-primary-04); */
+}
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-basis: auto;
+}
