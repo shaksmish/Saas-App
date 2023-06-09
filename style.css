@@ -677,19 +677,123 @@ div.header-image-5 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-  }
+}
 
-  .slider-prev {
+.slider-prev {
 /* TODO: slider was a bit complicated, fix it later*/
-  }
+}
   
-  .slider-next {
+.slider-next {
     color: white;
     font-size: larger;
-  }
+}
 
   .testimonial-rating {
     width: 147px;
     height: 28px;
     margin: 10px;
+  }
+
+  /* pricing section */
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+
+.pricing-content-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-content-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+    height: 600px;
+    width: 800px;
+  }
+  
+  .pricing-list li:before {
+    content: '✓ ';
+  }
+
+  .pricing-type-title{
+    margin:10px;
+    font-weight: var(--fw-regular-400);
+  }
+
+.price-tag {
+    font-weight: 700;
+font-size: 30px;
+}
+
+.pricing-icon {
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-type-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    height: 700px;
+    width: 350px;
+    padding: 23px;
+    padding-top: 70px;
+}
+
+.pricing-type-2 {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    height: 800px;
+    width: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+  } 
+
+  .pricing-background {
+    mix-blend-mode: normal;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    position: absolute;
+    width: 837px;
+    height: 283px;
+    top: 6970px;
+    opacity: 0.1;
+    background: conic-gradient(from 180deg at 50% 50%, rgba(73, 222, 255, 0.72) 0deg, rgba(79, 255, 223, 0.71) 360deg);
+    border-radius: 10px;
+  }
+
+  .pricing-btn-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+  }
+
+  .pricing-btn-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
   }
