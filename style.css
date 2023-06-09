@@ -121,11 +121,6 @@ svg {
     background: var(--clr-primary-03);
     border-radius: 5px;
 }
-/* testimonials section */
-.testimonials {
-    background-color: var(--clr-primary-03);
-    color: var(--clr-primary-04);
-}
 
 /* footer section */
 .footer {
@@ -636,3 +631,65 @@ div.header-image-5 {
     width: 150px;
     height: 54px;
 }
+
+/* testimonials section TODO: background should fit full screen*/
+
+.testimonials {
+    background-color: var(--clr-primary-03);
+    color: var(--clr-primary-04);
+}
+
+.testimonial-name {
+    font-size: 30px;
+    margin-bottom: 5px
+}
+
+.testimonial-role {
+    font-style: normal;
+    margin: 0;
+}
+
+.testimonial-text {
+    margin: 10px;
+    max-width: 700px;
+    /*TODO: fix the text overflow */
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.change-clr {
+    color: #47CFFF;
+}
+
+.stats {
+    padding-bottom: 40px;
+    
+}
+
+.stats-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .slider-prev {
+/* TODO: slider was a bit complicated, fix it later*/
+  }
+  
+  .slider-next {
+    color: white;
+    font-size: larger;
+  }
+
+  .testimonial-rating {
+    width: 147px;
+    height: 28px;
+    margin: 10px;
+  }
