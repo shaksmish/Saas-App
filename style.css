@@ -15,7 +15,7 @@
     --ff-body: var(--ff-primary);
 
     --fw-regular-400: 400;
-    --fw-medium-500: 500;
+    --fw-semibold-500: 500;
     --fw-bold-700: 700;
     --grid: 1fr;
     padding: 50px;
@@ -361,7 +361,7 @@ div.header-image-5 {
 }
 
 .sub-title {
-    font-weight: var(--fw-semibold-500);
+    font-weight: 500;
 }
 
 .section-text {
@@ -411,6 +411,8 @@ div.header-image-5 {
     padding: 20 px;
     justify-content: center;
     align-items: center;
+    border: 1px solid magenta;
+    padding: 20px;
 }
 
 .line-1 {
@@ -472,6 +474,7 @@ div.header-image-5 {
     justify-content: center;
     align-items: center;
     border: 1px solid yellowgreen;
+    padding: 20px;
 }
 
 .products-content {
@@ -492,11 +495,10 @@ div.header-image-5 {
     align-items: flex-start;
     padding: 14px 41px;
     gap: 10px;
-    font: 'jost';
     font-weight: 600;
     color: var(--clr-primary-04);
     width: 156px;
-    height: 60px;
+    height: 55px;
 
     background: #303030;
     border-radius: 5px;
@@ -509,6 +511,7 @@ div.header-image-5 {
     flex-wrap: wrap;
     max-width: 300px;
     margin: 20px;
+    
 }
 
 .box-1, .box-2, .box-3 {
@@ -520,7 +523,8 @@ div.header-image-5 {
 .products-item-1, .products-item-2, .products-item-3, .products-item-4 {
     display: flex;
     flex-direction: row;
-    
+    border-bottom: var(--clr-secondary-02) 1px solid;
+    /* remove border after the last child */
 }
 .product-icon {
     width: 56px;
@@ -528,8 +532,107 @@ div.header-image-5 {
     margin-right: 10px;
 }
 
-.products-sub-content.box-3 {
+.products-sub-content, .box-3 {
     padding-top: 10px;
     /* TODO: fix the padding in box-3  */
 }
 
+/* how-it-works section */
+
+.how-it-works {
+    display: flex;
+    flex-direction: row; 
+    flex-basis: 1;
+    border: 1px solid mediumpurple;
+    padding-left: 90px;
+    margin: 50px;
+    gap: 40px;
+}
+
+.how-it-works-content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+
+}
+
+.how-it-works-items {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.how-it-works-item-1, .how-it-works-item-2, .how-it-works-item-3 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #fff, #f4f4f4) border-box;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    }
+
+.how-it-works-icon {
+    width: 30px;
+    height: 18px;
+}
+
+.app-store {
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-secondary-03);
+    padding-left: 30px;
+    margin-top: 75px;
+    height: 420px;
+    border-radius: 30px 0 0 30px;
+    flex-wrap: wrap;
+}
+
+.app-lable {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 78%;
+    padding-right: 21px;
+}
+
+.app-font-color {
+    color: #3BA3C8;
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 495px;
+    min-height: 74px;
+}
+
+.mobile-screen {
+    width: 148px;
+    height: 287px;
+    left: -33.93px;
+    top: 58px;
+    position: relative;
+}
+
+/* .store-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 39px;
+    gap: 10px;
+    color: var(--clr-primary-04);
+    width: 183px;
+    height: 60px;
+
+    background: #303030;
+    border-radius: 5px;
+} */
+
+.apple, .google {
+    width: 150px;
+    height: 54px;
+}
