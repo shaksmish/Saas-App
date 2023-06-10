@@ -140,12 +140,13 @@ svg {
 .banner-header {
     font-family: var(--ff-body); 
     font-weight: 600;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 133.2%;
     color: var(--clr-primary-03);
     border: 1px solid #000000;
     text-transform: capitalize;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 20px;
 }
 
 .banner-btn {
@@ -168,8 +169,8 @@ svg {
     grid-area: header-image;
 }
 
-.div.header-image-1 {
-    position: absolute;
+.header-image-1 {
+    position: relative;
     width: 367.09px;
     height: 198.06px;
     left: 875px;
@@ -177,8 +178,8 @@ svg {
     transform: rotate(-21.46deg);
 }
 
-div.header-image-2 {
-    position: absolute;
+.header-image-2 {
+    position: relative;
     width: 305.12px;
     height: 339.09px;
     left: 972.33px;
@@ -187,24 +188,22 @@ div.header-image-2 {
     transform: rotate(-20.89deg);
 }
 
-div.header-image-3 {
-    position: absolute;
-    width: 406.81px;
-    height: 407.29px;
-    left: 1278.36px;
-    top: 412.1px;
+.header-image-3 {
+    position: relative;
+width: 350;
+height: 532.29px;
 }
 
-div.header-image-4 {
-    position: absolute;
+.header-image-4 {
+    position: relative;
     width: 276.91px;
     height: 204.83px;
     left: 1270.56px;
     top: 280px;
 }
 
-div.header-image-5 {
-    position: absolute;
+.header-image-5 {
+    position: relative;
     width: 499.31px;
     height: 378.39px;
     left: 1194.67px;
@@ -216,16 +215,6 @@ div.header-image-5 {
     grid-area: five-star;
     display: inline-grid;
     border: solid 1px green;
-
-    /* line 
-    position: absolute;
-    width: 116px;
-    height: 0px;
-    left: 469px;
-    top: 1006px;
-
-    border: 1px solid #C1C1C1;
-    transform: rotate(90deg); */
 
 }
 
