@@ -60,7 +60,7 @@ svg {
     align-items: center;
     max-width: 100%;
     padding: 1rem;
-    border: rgb(40, 28, 109) solid 1px;
+    /* border: rgb(40, 28, 109) solid 1px; */
     gap: 10px;
 }
 
@@ -130,14 +130,14 @@ svg {
     max-width: 40%;
     max-height: 200px;
     gap: 30px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 } 
 
 .heading {
     display: flex;
     flex-direction: row;
     max-height: 600px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     margin-bottom: 50px;
 }
 
@@ -147,7 +147,7 @@ svg {
     font-size: 50px;
     line-height: 133.2%;
     color: var(--clr-primary-03);
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     text-transform: capitalize;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-left: 20px;
@@ -241,18 +241,25 @@ transform: rotate(-7.89deg);
     display: flex;
     flex-direction: row-reverse;
     row-gap: 10px;
-    border: solid 1px green;
+    /* border: solid 1px green; */
 }
 
-.five-star-image-1 {
-   /* TODO: set up image position */
+/*
+.banner-background {
 
-}
+     TODO: add gradient background 
+    
+    display: inline-block;
+    position: absolute;
+width: 1527.06px;
+height: 1533.35px;
+left: 2368.59px;
+top: 813.6px;
 
-.five-star-image-2 {
-    /* TODO: set up image position */
-}
-
+background: conic-gradient(from 180deg at 50% 50%, rgba(73, 222, 255, 0.72) 0deg, rgba(79, 255, 223, 0.71) 360deg);
+mix-blend-mode: normal;
+transform: rotate(158.91deg)
+} */
 
 /* Features section */
 
@@ -371,7 +378,7 @@ margin: 30px;
 .why-choose-us {
     display: flex;
     flex-direction: row;
-    border: solid 1px salmon;
+    /* border: solid 1px salmon; */
 }
 .why-us-content {
     display: flex;
@@ -408,7 +415,7 @@ margin: 30px;
     padding: 20 px;
     justify-content: center;
     align-items: center;
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
     padding: 20px;
 }
 
@@ -443,7 +450,7 @@ margin: 30px;
 .newsletter {
     display: flex;
     flex-direction: column;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     justify-content: center;
     align-items: center;
 }
@@ -451,8 +458,10 @@ margin: 30px;
 .newsletter-content {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
     column-gap: 10px;
-    flex-grow: auto;
+    width: 600px;
     /* color: var(--clr-primary-04); */
 }
 
@@ -464,13 +473,27 @@ margin: 30px;
     align-items: center;
 }
 
+.input-suggestion {
+    width: 30%;
+    height: 40px;
+}
+
+.newsletter-btn {
+    width: 20%;
+height: 40px;
+
+background: #4BE3EB;
+border-radius: 5px;
+}
+
+
 /* products section */
 .products {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
     padding: 20px;
 }
 
@@ -540,7 +563,7 @@ margin: 30px;
     display: flex;
     flex-direction: row; 
     flex-basis: 1;
-    border: 1px solid mediumpurple;
+    /* border: 1px solid mediumpurple; */
     padding-left: 90px;
     margin: 50px;
     gap: 40px;
@@ -681,9 +704,10 @@ margin: 30px;
     align-items: center;
 }
 
+/* 
 .slider-prev {
-/* TODO: slider was a bit complicated, fix it later*/
-}
+TODO: slider was a bit complicated, fix it later
+}  */
   
 .slider-next {
     color: white;
@@ -823,7 +847,7 @@ font-size: 30px;
 .footer-bar {
     display: flex;
     flex-direction: row;
-    border: solid 1px white;
+    /* border: solid 1px white; */
     flex-direction: start;
 }
 
