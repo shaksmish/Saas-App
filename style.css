@@ -18,7 +18,10 @@
     --fw-semibold-500: 500;
     --fw-bold-700: 700;
     --grid: 1fr;
-    padding: 50px;
+    padding-left: 50px;
+    padding-left: 50px;
+    padding-top: 0;
+    padding-bottom: 20px;
     height: webkit-fill-available;
 }
 
@@ -97,9 +100,15 @@ svg {
     flex-wrap: wrap;
     flex-grow: 1;
   }
-  
+
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
   .nav-list li {
-    margin-right: 10px; /* Adjust the spacing between list items as needed */
+    margin-right: 10px;
+    /* Adjust the spacing between list items as needed */
   }
   
   .nav-list li:last-child {
@@ -261,6 +270,8 @@ mix-blend-mode: normal;
 transform: rotate(158.91deg)
 } */
 
+
+
 /* Features section */
 
 .features {
@@ -289,6 +300,8 @@ transform: rotate(158.91deg)
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: left;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 
 .features-title {
@@ -310,6 +323,21 @@ transform: rotate(158.91deg)
     text-decoration: #49DEFF;
 }
 
+.features-sub-content-item-1, .features-sub-content-item-2, .features-sub-content-item-3 {
+    padding: 20px;
+}
+
+.grey-box {
+    background: rgba(244, 244, 244, 0.93);
+    box-shadow: inset -2.57262px 2.57262px 0px #FFFFFF;
+    border-radius: 10px;
+}
+
+.white-box{
+    background: #FFFFFF;
+box-shadow: 0px 28px 57px rgba(190, 190, 190, 0.25);
+border-radius: 10px;
+}
 
 /* core features section */
 .core-features-container {
@@ -374,6 +402,7 @@ margin: 30px;
     font-weight: var(--fw-regular-400);
 }
 
+
 /* why choose us section */
 .why-choose-us {
     display: flex;
@@ -408,7 +437,9 @@ margin: 30px;
     padding-right: 70px;
 }
 
-/* TODO - add dividing lines between the client logos */
+
+/* client logos section
+TODO - add dividing lines between the */
 .client-logos {
     display: flex;
     flex-direction: column;
@@ -417,6 +448,7 @@ margin: 30px;
     align-items: center;
     /* border: 1px solid magenta; */
     padding: 20px;
+    margin: 50px;
 }
 
 .line-1 {
@@ -812,16 +844,23 @@ font-size: 30px;
     gap: 10px;
     width: 200px;
     height: 50px;
+    background: #EAEAEA;
+border-radius: 15px;
   }
 
   .pricing-btn-2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 0px;
     gap: 10px;
     width: 200px;
     height: 50px;
+    color: white;
+    background: #303030;
+box-shadow: 0px 28px 57px rgba(190, 190, 190, 0.25);
+border-radius: 15px;
   }
 
   /* footer section */
@@ -848,7 +887,7 @@ font-size: 30px;
     display: flex;
     flex-direction: row;
     /* border: solid 1px white; */
-    flex-direction: start;
+    flex-direction: flex-start;
 }
 
 .footer-items {
