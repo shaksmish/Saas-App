@@ -19,6 +19,7 @@
     --fw-bold-700: 700;
     --grid: 1fr;
     padding: 50px;
+    height: webkit-fill-available;
 }
 
 .fw-semibold-500 {
@@ -53,12 +54,11 @@ svg {
 
 /* header section */
 
-.container {
+.nav-bar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    max-width: 1400px;
+    max-width: 100%;
     padding: 1rem;
     border: rgb(40, 28, 109) solid 1px;
     gap: 10px;
@@ -123,24 +123,28 @@ svg {
 }
 
 /* main heading section */
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    max-height: 200px;
+    gap: 30px;
+    border: 1px solid blue;
+} 
+
 .heading {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    max-height: 600px;
     border: solid 1px red;
-    grid-template-areas: 'banner header-image'
-    'five-star header-image';
+    margin-bottom: 50px;
 }
 
-.banner {
-    grid-area: banner;
-    display: inline-grid;
-    border: solid 1px blue; 
-    color: var(--clr-primary-03);
-}
-
-.banner-header {
+.banner-header-title {
     font-family: var(--ff-body); 
     font-weight: 600;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 133.2%;
     color: var(--clr-primary-03);
     border: 1px solid #000000;
@@ -149,73 +153,95 @@ svg {
     padding-left: 20px;
 }
 
-.banner-btn {
+.banner-btns {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 36px;
-
-    width: 334px;
-    height: 60px;
- 
-    /* Style the button later -- Inside auto layout 
-
-    flex: none;
-    order: 1;
-    flex-grow: 0; */
+    gap: 5px;
 }
+
+.banner-btn-1 {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 39px;
+gap: 10px;
+
+width: 183px;
+height: 60px;
+color: white;
+background: #303030;
+border-radius: 5px;
+
+}
+
+.banner-btn-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 39px;
+gap: 10px;
+background-color: white;
+width: 183px;
+height: 60px;
+border-radius: 5px;
+
+}
+
 .header-image {
     grid-area: header-image;
 }
 
 .header-image-1 {
     position: relative;
-    width: 367.09px;
-    height: 198.06px;
-    left: 875px;
-    top: 434.81px;
-    transform: rotate(-21.46deg);
+width: 232.09px;
+height: 198.06px;
+left: 75px;
+top: 34.81px;
+transform: rotate(-9.46deg);
 }
 
 .header-image-2 {
     position: relative;
-    width: 305.12px;
-    height: 339.09px;
-    left: 972.33px;
-    top: 636.16px;
-    
-    transform: rotate(-20.89deg);
+width: 256.12px;
+height: 255.09px;
+left: 147.33px;
+top: -46.84px;
+transform: rotate(-11.89deg);
 }
 
 .header-image-3 {
     position: relative;
-width: 350;
-height: 532.29px;
+width: 240px;
+height: 240.29px;
+left: 314px;
+top: -378px;
+transform: rotate(-12.89deg);
 }
 
 .header-image-4 {
     position: relative;
-    width: 276.91px;
-    height: 204.83px;
-    left: 1270.56px;
-    top: 280px;
+width: 194px;
+height: 142.83px;
+left: 268.56px;
+top: -682px;
+transform: rotate(-12.89deg);
 }
 
 .header-image-5 {
     position: relative;
-    width: 499.31px;
-    height: 378.39px;
-    left: 1194.67px;
-    top: 778.25px;
-    
+width: 474.31px;
+height: 365.39px;
+left: 194.67px;
+top: -578.25px;
+transform: rotate(-7.89deg);
 }
 
 .five-star {
-    grid-area: five-star;
-    display: inline-grid;
+    display: flex;
+    flex-direction: row-reverse;
+    row-gap: 10px;
     border: solid 1px green;
-
 }
 
 .five-star-image-1 {
@@ -279,12 +305,22 @@ height: 532.29px;
 
 
 /* core features section */
-.core-features {
+.core-features-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-items: space-evenly;
+    padding: 70px;
+}
+
+.core-features-images {
     display: grid;
-    margin : 20 px;
     grid-template-areas: "core-features-image-1 core-features-image-1 core-features-image-1"
     "core-features-image-2 core-features-image-2 core-features-image-3"
-    "core-features-image-4 core-features-image-4 core-features-image-4"
+    "core-features-image-4 core-features-image-4 core-features-image-4";
+    max-width: 533px;
+    max-height: 568px;
+
 }
 
 .core-features-image-1 {
@@ -303,13 +339,14 @@ height: 532.29px;
     grid-area: core-features-image-4;
 }
 
-.core-features .content {
+.core-features-content {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    
+    align-items: flex-start;
+padding: 0px;
+gap: 30px;
+margin: 30px;
 }
-
 
 
 
