@@ -147,7 +147,7 @@ svg {
     flex-direction: row;
     max-height: 600px;
     /* border: solid 1px red; */
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .banner-header-title {
@@ -280,6 +280,7 @@ transform: rotate(158.91deg)
     grid-template-rows: 2;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .features-header {
@@ -902,4 +903,10 @@ border-radius: 15px;
     flex-direction: column;
     column-gap: 10px;
 }
+.footer-link {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
